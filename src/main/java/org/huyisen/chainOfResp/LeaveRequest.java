@@ -1,0 +1,40 @@
+package org.huyisen.chainOfResp;
+
+/**
+ * 封装请假的基本信息
+ *
+ * <p>User: Hu Yisen
+ * <p>Date: 2015-12-11 08:57
+ * <p>Version: 1.0
+ */
+public class LeaveRequest {
+    private String empName;
+    private int leaveDays;
+    private String reason;
+
+
+    public LeaveRequest(String empName, int leaveDays, String reason) {
+        super();
+        this.empName = empName;
+        this.leaveDays = leaveDays;
+        this.reason = reason;
+    }
+    public String getEmpName() {
+        return empName;
+    }
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
+    public int getLeaveDays() {
+        return leaveDays;
+    }
+    public void setLeaveDays(int leaveDays) {
+        this.leaveDays = leaveDays;
+    }
+    public String getReason() {
+        return reason;
+    }
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+}
